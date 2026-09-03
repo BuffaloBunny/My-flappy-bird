@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Sky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="game-wrapper">
+        <div class="game-container">
+            <canvas id="gameCanvas"></canvas>
+
+            <!-- Score -->
+            <div class="score-container">
+                <div class="score-label">SCORE</div>
+                <div id="score">0</div>
+            </div>
+
+            <!-- Start Screen -->
+            <div id="startScreen" class="screen">
+                <h1>FLAPPY SKY</h1>
+                <p>🐦 Help the bird fly through the pipes!</p>
+                <button id="startButton">START GAME</button>
+                <div class="controls">
+                    <span>SPACE</span>
+                    <span>CLICK</span>
+                    <span>TAP</span>
+                </div>
+            </div>
+
+            <!-- Game Over Screen -->
+            <div id="gameOverScreen" class="screen hidden">
+                <h1>GAME OVER</h1>
+
+                <div class="results">
+                    <div>
+                        <span>SCORE</span>
+                        <strong id="finalScore">0</strong>
+                    </div>
+
+                    <div>
+                        <span>BEST</span>
+                        <strong id="bestScore">0</strong>
+                    </div>
+                </div>
+
+                <button id="restartButton">PLAY AGAIN</button>
+            </div>
+        </div>
+
+        <p class="footer-text">Flappy Sky • Made with HTML, CSS & JavaScript</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
